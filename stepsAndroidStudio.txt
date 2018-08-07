@@ -1,0 +1,11 @@
+1. download Android Studio
+2.yes main activity
+Phone and Tablet Android 7.0 Nougat 24
+check backwars comp
+if error, clck and sync
+press on play button
+choose virtual device nexus 5 x
+select a system : download nougat 7.0
+select then next
+install run : install and continue
+press play at the top
