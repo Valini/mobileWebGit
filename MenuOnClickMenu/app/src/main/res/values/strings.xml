@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MenuOnClickMenu</string>
+    <string name="menu_item1">Student Id</string>
+    <string name="menu_item2">Student Info</string>
+</resources>
