@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JohnAbbottIntent</string>
+    <string name="mi_location">Location John Abbott</string>
+    <string name="mi_website">John Abbott Website</string>
+    <string name="mi_collegeInfo">College Info</string>
+
+</resources>

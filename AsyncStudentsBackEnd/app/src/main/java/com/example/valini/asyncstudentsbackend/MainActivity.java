@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
            studentListLoaded= new ArrayList();
             studentListLoaded =s;
             TextView tvResults = findViewById(R.id.tvResults);
-            tvResults.setText("Data has been Load");
+            tvResults.setText("Data has been Loaded");
 
 
 
