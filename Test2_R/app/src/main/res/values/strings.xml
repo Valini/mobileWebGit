@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Test2</string>
+    <string name="click_name">Lorem <b>Ipsum!</b></string>
+    <string name="second_string">This thing is crap!</string>
+</resources>

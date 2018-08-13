@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OptionMenu</string>
+    <string name="menu_name1">Student Info</string>
+    <string name="menu_name2">Planet Info</string>
+    <string name="menu_name3">Planet and Students</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+</resources>

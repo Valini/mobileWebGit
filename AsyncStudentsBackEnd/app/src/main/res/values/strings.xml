@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AsyncStudentsBackEnd</string>
+    <string name="mi_allStudents">Student List</string>
+    <string name="mi_studentId">Student Id</string>
+    <string name="mi_studentInfo">Student Info</string>
+    <string name="welcome"><b><u>Welcome to Student Async Tasks</u></b></string>
+</resources>

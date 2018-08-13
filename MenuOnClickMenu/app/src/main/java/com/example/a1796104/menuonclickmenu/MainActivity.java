@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
         String studentId[] = {"1", "2", "3", "4", "5"};
         Random r = new Random();
         int j = r.nextInt(studentId.length);
-
-
         firstTextView = findViewById(R.id.firstTextView);
         firstTextView.setText("Student Number: " + studentId[j]);
 

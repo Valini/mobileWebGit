@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Task3: Display id and Name of student</string>
+    <string name="added_text">This is added text using  string</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+</resources>

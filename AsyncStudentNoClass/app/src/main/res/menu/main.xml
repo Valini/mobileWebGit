@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/allStudents"
+        android:title="@string/mi_allStudents"
+        android:orderInCategory="1"
+        ></item>
+    <item
+        android:id="@+id/studentId"
+        android:title="@string/mi_studentId"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/studentInfo"
+        android:title="@string/mi_studentInfo"
+        android:orderInCategory="3"/>
+
+</menu>
