@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/mi_allStudents"
+    android:title="@string/mi_allStudents"
+    android:orderInCategory="1"></item>
+
+    <item android:id="@+id/mi_randomID"
+        android:title="@string/mi_randomID"
+        android:orderInCategory="2"></item>
+    <item android:id="@+id/mi_studentInfo"
+        android:title="@string/mi_studentInfo"
+        android:orderInCategory="3"></item>
+</menu>
