@@ -225,20 +225,15 @@ public class MainActivity extends AppCompatActivity {
             TextView tv = findViewById(R.id.tv_Results);
             tv.setText("Random Student ID:"+"\n");
             try {
+
                 JSONArray jsonarray = new JSONArray(s);
                 for (int i = 0; i < jsonarray.length(); i++) {
                     JSONObject jsonobject = jsonarray.getJSONObject(i);
-
-                    String id = jsonobject.getString("id");
-                    String name = jsonobject.getString("name");
-                    String email = jsonobject.getString("email");
-
-                   // Student student[i] = new Student(); FIX ME!
-                    //student[i].setStudentId(id);
-                    //student[i].setStudentName(name);
-                   // studentList.add(student[i]);
-
-
+                    Student student = new Student(); //FIX ME!
+                    student.setStudentId(jsonobject.getString("id"));
+                    student.setStudentName(jsonobject.getString("name"));
+                    //jsonobject.getString("email");
+                    studentList.add(student);
                 }
 
                 Random rand = new Random();

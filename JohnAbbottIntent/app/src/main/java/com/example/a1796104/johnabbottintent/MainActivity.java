@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -17,6 +18,44 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i("Valini", "onCreate");
+    }
+
+
+    @Override
+    protected void onStart() {
+        Log.i("Valini", "onStart");
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.i("Valini", "onResume");
+        super.onResume();
+    }
+
+    @Override
+    protected void onRestart() {
+        Log.i("Valini", "onRestart");
+        super.onRestart();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.i("Valini", "onPause");
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.i("Valini", "onStop");
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.i("Valini", "onDestroy");
+        super.onDestroy();
     }
 
     @Override
