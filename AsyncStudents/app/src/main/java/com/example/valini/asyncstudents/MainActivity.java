@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
 
-
             TextView tvResults = findViewById(R.id.tvResults);
             tvResults.setText("Data Starting to Load...");
         }
