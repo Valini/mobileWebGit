@@ -11,7 +11,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
+        //receiving new intent from MainActivity
         TextView child_tv = findViewById(R.id.child_tv);
         Intent intentReceived = getIntent();
 

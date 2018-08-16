@@ -14,9 +14,10 @@ public class MainActivityExample extends AppCompatActivity {
 
     }
 
-
+//creating new intent
     public void startSecondActivity(View view){
         Intent intentToStartActivity = new Intent(MainActivityExample.this, MainActivity2.class);
+        //carrying extra text to the next activity
         intentToStartActivity.putExtra(Intent.EXTRA_TEXT, "This is extra text");
         startActivity(intentToStartActivity);
 

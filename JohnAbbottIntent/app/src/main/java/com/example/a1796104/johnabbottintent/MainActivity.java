@@ -70,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         int selectedItemId = item.getItemId();
 
         if (selectedItemId == R.id.location) {
+
+            //IMPLICIT INTENT
             Uri geoLocation = Uri.parse("geo:45.4060, -73.9419?z=18");
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(geoLocation);
@@ -82,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
         else if (selectedItemId == R.id.website) {
+
+            //IMPLICIT INTENT
             Uri uri = Uri.parse("http://www.johnabbott.qc.ca/");
 
             Intent openWebpageIntent = new Intent(Intent.ACTION_VIEW, uri);
@@ -93,12 +97,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
         }
 
 
         else if (selectedItemId == R.id.collegeInfo) {
-
+            //EXPLICIT INTENT
             Intent intentToStartActivity = new Intent(MainActivity.this, Main2Activity.class);
             intentToStartActivity.putExtra(Intent.EXTRA_TEXT, "This is extra text");
             startActivity(intentToStartActivity);

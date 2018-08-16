@@ -19,8 +19,4 @@
         android:text="@string/start_activity"
          />
 
-
-
-
-
 </LinearLayout>
