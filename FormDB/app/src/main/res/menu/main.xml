@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuItem1"
+        android:title="Open Second Activity"
+        android:orderInCategory="1"></item>
+
+    <item android:id="@+id/menuItem2"
+        android:title="test2"
+        android:orderInCategory="2"></item>
+
+    <item android:id="@+id/menuItem3"
+        android:title="test3"
+        android:orderInCategory="3"
+        android:onClick="getAllInfo"></item>
+
+</menu>
