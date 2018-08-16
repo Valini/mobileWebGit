@@ -1,0 +1,10 @@
+open gradle script and open mobule app gradle
+go to setho, click on download
+copy dependency to the gradle dependencies:
+ implementation 'com.facebook.stetho:stetho:1.5.0'
+ implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+ Sync now on the Android Studio
+ go to chrome and type:
+ chrome://inspect/#devices
+Add:Stetho.initializeWithDefaults(this);
+    on create()

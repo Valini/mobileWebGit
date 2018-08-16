@@ -1,9 +1,9 @@
 package com.example.a1796104.formdb;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,8 +12,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.facebook.stetho.Stetho;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends MyMenuActivity {
 
     EditText nameEditText;
     EditText addressEditText;
@@ -24,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Stetho.initializeWithDefaults(this);
+    }
+
+    public void startSecondActivity(View view){
+        Intent intentToStartSecondActivity = new Intent(MainActivity.this, SecondActivity.class);
+        intentToStartSecondActivity.putExtra(Intent.EXTRA_TEXT, "Sent from Main activity");
+        startActivity(intentToStartSecondActivity);
+
+
     }
 
 
