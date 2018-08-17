@@ -79,9 +79,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-
-
-
     }
         else if (selectedItemId == R.id.website) {
 
@@ -96,9 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(openWebpageIntent);
             }
 
-
         }
-
 
         else if (selectedItemId == R.id.collegeInfo) {
             //EXPLICIT INTENT
