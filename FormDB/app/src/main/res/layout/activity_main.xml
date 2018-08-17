@@ -7,6 +7,9 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
@@ -62,5 +65,21 @@
         android:id="@+id/tv_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rc_view"></android.support.v7.widget.RecyclerView>
+
+
+
+    </FrameLayout>
+
+
 
 </LinearLayout>
