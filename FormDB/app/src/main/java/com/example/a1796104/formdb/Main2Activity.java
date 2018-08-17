@@ -7,6 +7,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public class Main2Activity extends AppCompatActivity {
+    /*
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +27,12 @@ public class Main2Activity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int selectedItemId = item.getItemId();
 
-        if(selectedItemId== R.id.menuItem1){
-
-
+        if (selectedItemId == R.id.menuItem1) {
 
 
         }
-
+return;
     }
+
+    */
+}

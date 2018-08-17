@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -14,20 +17,34 @@ import java.util.ArrayList;
 import java.util.List;
 import com.facebook.stetho.Stetho;
 
-public class MainActivity extends MyMenuActivity {
+public class MainActivity extends AppCompatActivity {
 
     EditText nameEditText;
     EditText addressEditText;
     EditText phoneEditText;
-    List<Student> studentList = new ArrayList<>();
+    ArrayList<Student> studentList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Stetho.initializeWithDefaults(this);
+        initRecylerView();
     }
 
+    public void initRecylerView(){
+        RecyclerView myRcView = findViewById(R.id.rc_view);
+        StudentAdapter studentAdapter = new StudentAdapter(studentList);
+
+       // studentAdapter.studentList = studentList;
+
+        myRcView.setAdapter(studentAdapter);
+        myRcView.setLayoutManager(new LinearLayoutManager(this));
+
+
+    }
+
+/*
     public void startSecondActivity(View view){
         Intent intentToStartSecondActivity = new Intent(MainActivity.this, SecondActivity.class);
         intentToStartSecondActivity.putExtra(Intent.EXTRA_TEXT, "Sent from Main activity");
@@ -36,7 +53,7 @@ public class MainActivity extends MyMenuActivity {
 
     }
 
-
+*/
     public void saveVariables(View view){
 
        nameEditText = findViewById(R.id.tv_nameInput);
@@ -120,6 +137,13 @@ public class MainActivity extends MyMenuActivity {
         tvResults.setText("Student List:" + "\n");
 
         while (cursor.moveToNext()) {
+            Student student = new Student();
+            student.setName(cursor.getString(0));
+            student.setAddress(cursor.getString(1));
+            student.setPhone(cursor.getString(2));
+
+            studentList.add(student);
+
 
             tvResults.append(cursor.getString(0) + "||" +cursor.getString(1) + "||" + cursor.getString(2) + "\n");
         }
