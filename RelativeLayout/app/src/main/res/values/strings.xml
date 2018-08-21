@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RelativeLayout</string>
+    <string name="reminder">This is a Reminder</string>
+    <string name="done">This is done</string>
+    <string-array
+        name="string_array_spinner">
+        <item
+            >item 1</item>
+        <item
+            >item 2</item>
+        <item
+            >item 3</item>
+        <item
+            >item 4</item>
+    </string-array>
+</resources>
