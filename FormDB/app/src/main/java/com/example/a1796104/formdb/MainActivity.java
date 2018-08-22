@@ -6,11 +6,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-<<<<<<< HEAD
-=======
+
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
->>>>>>> 84a4f62eb738415c706d6559d7d15db73581312c
+
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
